@@ -27,7 +27,7 @@ Cylindre::Cylindre(float ep_cyl, float r_cyl, int nb_fac, float r, float g, floa
 void Cylindre::dessiner_face(QMatrix4x4 * matrix, float ang)
 {
     qDebug()<<"Cylindre::dessiner_face";
-    float angle = 2* M_PI/this->nb_fac;
+    float angle = 2* M_PI/(this->nb_fac);
 
     /*glBegin(GL_LINE_LOOP);
     glVertex3f(0.0,0.0,0.0);
@@ -86,7 +86,7 @@ void Cylindre::dessiner_face(QMatrix4x4 * matrix, float ang)
     //QVector<GLfloat> vertData;
     //matrix->rotate(ang, 0, 1, 0);
 
-    for (int i = 0; i < 6; ++i) {
+    for (int i = 0; i < nb_face; ++i) {
         // coordonnées sommets
         for (int j = 0; j < 3; j++)
             vertData.append(vertices1[i*3+j]);

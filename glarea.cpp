@@ -172,7 +172,7 @@ void GLArea::paintGL()
     QMatrix4x4 matrix;
     GLfloat hr = m_radius, wr = hr * m_ratio;
     matrix.frustum(-wr, wr, -hr, hr, 1.0, 5.0);
-    matrix.translate(0, 0, -3.0);
+   // matrix.translate(0, 0, -3.0);
 
     // Rotation de la scène pour l'animation
     matrix.rotate(m_angle, 0, 1, 0);

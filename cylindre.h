@@ -12,9 +12,9 @@
 #include <QSurfaceFormat>
 #include <QMatrix4x4>
 #include <QOpenGLBuffer>
+
 class Cylindre
 {
-
     public:
         float ep_cyl;
         float r_cyl;
